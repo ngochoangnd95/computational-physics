@@ -26,9 +26,9 @@ int main() {
 	/*Back subtraction + Show solution*/
 	printf("Nghiem he phuong trinh la:\n");
 	for(i=n-1;i>=0;i--) {
-	  s=0;
-	  for(j=i+1;j<n;j++) s+=a[i][j]*x[j];
-	  x[i]=(a[i][n]-s)/a[i][i];
-	  printf("x%d= %.3lf\n",i+1,x[i]);
+		s=0;
+		for(j=i+1;j<n;j++) s+=a[i][j]*x[j];
+		x[i]=(a[i][n]-s)/a[i][i];
+		printf("x%d= %.3lf\n",i+1,x[i]);
 	}
 }
